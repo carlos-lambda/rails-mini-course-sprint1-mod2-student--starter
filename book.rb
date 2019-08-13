@@ -1,4 +1,5 @@
-module Book
+class Book
+    extend BookBuilder
     # read only properties
     attr_reader :title, :author
     # write only properties
