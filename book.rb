@@ -1,7 +1,11 @@
-class Book
+module Book
+    # read only properties
     attr_reader :title, :author
+    # write only properties
     attr_writer :finished
+    # both read + write properties
     attr_accessor :count
+    # constructor with state
     def initialize(title, author)
         @title = title
         @author = author
@@ -10,6 +14,4 @@ class Book
     end
 end
 
-b = Book.new("Goosbumps", "R.L. Stein")
 
-print b.title

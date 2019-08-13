@@ -1,4 +1,4 @@
-require "./book.rb"
+require_relative "./book.rb"
 
 class ComicBook
 
